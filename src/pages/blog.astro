@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Beadle's Blog";
 ---
 
 <html lang="en">
@@ -8,18 +8,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Beadle's Blog</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/blog">Blog</a>
 
-		<h1>Blog Time</h1>
+    <h1>{pageTitle}</h1>
     <h2>I'm no writer</h2>
   
     <p>Can't wait to write my first blog post or maybe even just use it as a journal?</p>
   
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <ul>
+      <li><a href="/posts/post-1/">Post 1</a></li>
+      <li><a href="/posts/post-2/">Post 2</a></li>
+      <li><a href="/posts/post-3/">Post 3</a></li>
+    </ul>
 	</body>
 </html>
