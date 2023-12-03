@@ -1,6 +1,26 @@
-// {
-//   "extends": "astro/tsconfigs/strict",
-//   "compilerOptions": {
-//     "noUnusedLocals": true
-//   }
-// }
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@scripts/*": [
+        "src/scripts/*"
+      ],
+    },
+    "noUnusedLocals": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}
